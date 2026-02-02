@@ -1,96 +1,104 @@
-# 🎙️ Voice Assistant in Python
+🎧 Python Voice Assistant
 
-A simple **Python-based voice assistant** that can perform everyday tasks such as opening websites, searching Wikipedia, telling jokes, sending emails, and more using **speech recognition** and **text-to-speech**.
+A lightweight voice-controlled assistant built in Python that responds to spoken commands and performs common tasks like opening websites, fetching information, telling jokes, and sending emails using speech recognition and text-to-speech.
 
----
+✨ What This Assistant Can Do
 
-## 🚀 Features
+🎙️ Listen and interpret voice commands
 
-* 🔊 **Speech Recognition** (understands voice commands)
-* 🗣️ **Text-to-Speech** responses using `pyttsx3`
-* 🌐 Open websites like YouTube, Google
-* 📖 Fetch summaries from **Wikipedia**
-* ⏰ Tell the current time
-* 📧 Send emails via Gmail SMTP
-* 🤖 Tell random jokes (`pyjokes`)
-* 🧮 Perform basic calculations
-* 💬 Fun interactions (“Who are you?”, “How are you?”)
-* ❌ Exit gracefully on command
+🔊 Respond using text-to-speech (pyttsx3)
 
----
+🌍 Open popular websites (Google, YouTube, etc.)
 
-## 🧰 Libraries Used
+📚 Retrieve short summaries from Wikipedia
 
-* `pyttsx3` – Text-to-Speech
-* `speech_recognition` – Speech to Text
-* `datetime` – Get system time
-* `wikipedia` – Fetch Wikipedia summaries
-* `webbrowser` – Open websites
-* `smtplib` – Send emails
-* `pyjokes` – Generate jokes
-* `os` – Open files/programs
-* `random` – Randomized responses
+🕒 Announce the current system time
 
----
+📩 Send emails using SMTP
 
-## 📂 Project Structure
+😄 Crack random jokes
 
-```
-Source code.py   # Main Python script
-README.md        # Documentation
-```
+➗ Handle simple calculations
 
----
+💬 Answer basic conversational questions
 
-## ⚙️ Setup & Installation
+🚪 Exit smoothly when instructed
 
-1. Clone the repository or download the code.
-2. Install required libraries:
+🛠️ Technologies & Libraries
 
-```bash
+Python 3
+
+pyttsx3 – Voice output
+
+speech_recognition – Voice input
+
+datetime – Time-related functions
+
+wikipedia – Information lookup
+
+webbrowser – Browser control
+
+smtplib – Email service
+
+pyjokes – Joke generator
+
+os, random – Utility operations
+
+📁 File Structure
+Source code.py   # Main application file
+README.md        # Project documentation
+
+⚙️ Installation Guide
+
+Clone the repository or download the source files.
+
+Install required dependencies:
+
 pip install pyttsx3 SpeechRecognition wikipedia pyjokes
-```
 
-*(Ensure you also have `pyaudio` installed for microphone input. On Windows use `pip install pipwin && pipwin install pyaudio`.)*
 
-3. Replace placeholder Gmail credentials in `sendEmail()` with your own if using the email feature:
+Microphone support requires pyaudio
+(Windows users can install it using):
 
-```python
+pip install pipwin
+pipwin install pyaudio
+
+
+If using the email feature, update your Gmail credentials inside the code:
+
 server.login('your_email@gmail.com', 'your_password')
-```
 
----
+▶️ How to Run
 
-## ▶️ Usage
+Start the assistant by running:
 
-Run the assistant with:
-
-```bash
 python "Source code.py"
-```
 
-Speak commands like:
 
-* "Open YouTube"
-* "Search Python programming"
-* "What time is it?"
-* "Tell me a joke"
-* "Send email"
-* "Exit"
+Example voice commands:
 
----
+“Open Google”
 
-## ⚠️ Notes
+“Tell me the time”
 
-* You need an active microphone for speech recognition.
-* Email functionality requires **less secure app access enabled** on Gmail (or an App Password if 2FA is enabled).
-* The assistant runs continuously in a loop until you say **“exit”**.
+“Search Python on Wikipedia”
 
----
+“Tell a joke”
 
-## 📜 License
+“Send an email”
 
-This project is for **educational purposes** only. Feel free to modify and extend.
+“Exit”
 
----
+⚠️ Important Notes
 
+A working microphone is required.
+
+Gmail email sending may need App Passwords or security settings enabled.
+
+The assistant runs continuously until the exit command is given.
+
+This project is intended for learning and demonstration, not production use.
+
+📄 License
+
+Open for educational use and experimentation.
